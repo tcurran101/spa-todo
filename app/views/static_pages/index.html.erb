@@ -20,10 +20,13 @@
     $('#new-form').submit(function(event) {
       event.preventDefault();
       var textbox = $('.new-todo');
-      console.log("Task: ", textbox.val());
+      var payload = {
+        task: {
+          title: textbox.val()
+        }
+      };
+      console.log(payload);
     });
-
-
 
     function taskHtml(task) {
       var checkedStatus = task.done ? "checked" : "";
