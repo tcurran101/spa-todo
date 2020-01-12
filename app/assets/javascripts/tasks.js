@@ -1,6 +1,4 @@
-<script>
   $(function() {
-
 
     function taskHtml(task) {
       var checkedStatus = task.done ? "checked" : "";
@@ -56,4 +54,3 @@
     });
 
     });
-</script>
