@@ -1,5 +1,10 @@
   $(function() {
 
+   $(document).ready(function(singlejs){
+      Paloma.start();
+      var TasksController = Paloma.controller('Tasks');
+    });
+
     function taskHtml(task) {
       var checkedStatus = task.done ? "checked" : "";
       var liElement = '<li><div class="view"><input class="toggle" type="checkbox"' +
@@ -53,4 +58,4 @@
       });
     });
 
-    });
+  });
