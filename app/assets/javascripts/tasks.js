@@ -1,10 +1,5 @@
   $(function() {
 
-   $(document).ready(function(singlejs){
-      Paloma.start();
-      var TasksController = Paloma.controller('Tasks');
-    });
-
     function taskHtml(task) {
       var checkedStatus = task.done ? "checked" : "";
       var liClass = task.done ? "completed" : "";
